@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>add</title>
+
 </head>
 <body>
-
+    <h1>Prueba registrar Home</h1>
+    <form method="POST">{% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 </html>
